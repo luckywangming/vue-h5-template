@@ -24,14 +24,30 @@ export default {
           to: {
             name: 'Home'
           },
-          icon: 'home-o'
+          icon: {
+            active: require('@/assets/imgs/icon_home.png'),
+            inactive: require('@/assets/imgs/icon_home_no.png'),
+          }
         },
         {
-          title: '关于我',
+          title: '巡检工单',
+          to: {
+            name: 'Order'
+          },
+          icon: {
+            active: require('@/assets/imgs/icon_xj.png'),
+            inactive: require('@/assets/imgs/icon_xj_no.png'),
+          }
+        },
+        {
+          title: '我的',
           to: {
             name: 'About'
           },
-          icon: 'user-o'
+          icon: {
+            active: require('@/assets/imgs/icon_me.png'),
+            inactive: require('@/assets/imgs/icon_me_no.png'),
+          }
         }
       ]
     }
